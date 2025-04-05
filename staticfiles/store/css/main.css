@@ -1,3 +1,409 @@
-body{
-    background-color: blue;
+.container {
+  margin-top: 80px;
+}
+
+
+
+
+
+
+
+
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+  color: #ffffff ;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ffeb3b !important;  
+}
+
+
+.btn-warning {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #ff5722;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #e64a19;
+  color: #ffffff;
+}
+
+
+#cart-icon {
+  transition: transform 0.3s ease;
+}
+
+#cart-icon:hover {
+  transform: scale(1.1);
+}
+
+
+.form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+
+body {
+  background-color: #f8f9fa; 
+  font-family: Arial, sans-serif;
+}
+
+
+.box-element.product {
+  background: #ffffff; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 12px;
+  float: right;
+}
+
+.new-price {
+  color: red;
+  font-weight: bold;
+  margin-left: 8px;
+  font-size: 18px; 
+  float: right;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.box-element {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.cart-row {
+  display: flex;      
+  align-items: center;
+  justify-content: space-between; 
+  padding: 10px 0; 
+  border-bottom: 1px solid #ddd; 
+}
+
+.quantity {
+  font-weight: 700;
+  min-width: 30px; 
+  text-align: center;
+}
+
+.chg-quantity {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  display: block;
+}
+
+.quantity-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; 
+}
+
+.chg-quantity-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.form-field{
+  width:250px;
+  display: inline-block;
+  padding: 5px;
+}
+
+.hidden{
+  display: none;
+}
+
+.cart-container {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px; 
+}
+
+.cart-total {
+  position: absolute;
+  top: 1px; 
+  right: 8px; 
+  background-color: #e64a19;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Register Page Styling */
+.register-container {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Form Box */
+.register-container form {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Heading */
+.register-container h2 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.register-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.register-container input:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+/* Submit Button */
+.register-container button {
+  width: 100%;
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-container button:hover {
+  background: #218838;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+  .register-container form {
+      width: 90%;
+      max-width: 350px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small devices (phones, 576px and below) */
+@media (max-width: 576px) {
+  .container {
+    margin-top: 50px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+
+  .btn-warning {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .cart-row {
+    flex-direction: column; /* Stack cart items */
+    align-items: flex-start;
+  }
+
+  .quantity-wrapper {
+    flex-direction: row;
+  }
+
+  .chg-quantity-wrapper {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .box-element.product {
+    padding: 10px;
+  }
+
+  .new-price, .old-price {
+    float: none;
+    font-size: 14px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .cart-total {
+    top: 20px;  /* Move it higher */
+    right: 3px;  /* Move it even closer */
+    width: 14px;
+    height: 14px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+
+/* Medium devices (tablets, 768px and below) */
+@media (max-width: 768px) {
+  .container {
+    margin-top: 60px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .btn-warning {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .cart-row {
+    flex-direction: row;
+  }
+
+  .box-element.product {
+    padding: 15px;
+  }
+
+  .thumbnail {
+    width: 100%; /* Make thumbnails responsive */
+  }
+}
+@media (max-width: 768px) {
+  .cart-total {
+    top: -5px;  /* Move it slightly higher */
+    right: 5px;  /* Move it closer */
+    width: 16px;
+    height: 16px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+/* Large devices (desktops, 992px and below) */
+@media (max-width: 992px) {
+  .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+
+  .btn-warning {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .cart-row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .box-element.product {
+    padding: 20px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and below) */
+@media (max-width: 1200px) {
+  .navbar-nav .nav-link {
+    font-size: 18px;
+  }
+
+  .btn-warning {
+    padding: 12px 24px;
+  }
 }
